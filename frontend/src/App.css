@@ -1,0 +1,209 @@
+.app-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 60px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Light Mode Container */
+.light-mode .task-manager-container {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212; /* Deep, clean black */
+  color: #d1d1d1; /* Slightly soft white for readability */
+}
+
+/* Dark Mode Container */
+.dark-mode .task-manager-container {
+  background-color: #1e1e1e; /* Dark grey for cards */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6); /* Softer shadows */
+  border: 1px solid #333333;
+}
+
+/* Task Manager Container */
+.task-manager-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Title */
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #357bd8; /* Slightly darker blue */
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 8px rgba(74, 144, 226, 0.5);
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  border: 2px solid #444;
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 8px rgba(74, 144, 226, 0.8);
+}
+
+/* Task Items */
+.task-item {
+  background-color: #f9f9f9;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .task-item {
+  background-color: #2e2e2e;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons (Edit/Delete) */
+.task-actions button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.edit-btn {
+  background-color: #2ecc71; /* Green */
+  color: white;
+}
+
+button.edit-btn:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+button.delete-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+button.delete-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Text Content */
+p {
+  margin: 0;
+  color: inherit;
+  font-size: 1rem;
+}
+h1 {
+  margin: 0;
+  color: inherit;
+
+  }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .task-manager-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .theme-toggle-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+  }
+}
