@@ -2,6 +2,11 @@
 
 This project is a simple Task Manager application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to manage tasks, including creating, reading, updating, and deleting tasks.
 
+## 🚀 Live Demo
+
+You can view the deployed frontend here:  
+👉 [https://task-manager-mern-2-77n6.onrender.com](https://task-manager-mern-2-77n6.onrender.com)
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
